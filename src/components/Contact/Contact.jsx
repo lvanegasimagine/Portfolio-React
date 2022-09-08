@@ -62,31 +62,13 @@ const Contact = () => {
             <h4>WhatsApp</h4>
             <h5>+505 8299-9448</h5>
             <a
-              href="https://api.whatsapp.com/send?phone+56326521"
+              href="https://api.whatsapp.com/send/?phone=50582999448&text&type=phone_number&app_absent=0"
               target="_blank"
             >
               Send a Message
             </a>
           </article>
         </div>
-        {/* <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-          />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button className="btn btn-primary" type="submit">
-            Send Message
-          </button>
-        </form> */}
       </div>
     </section>
   );

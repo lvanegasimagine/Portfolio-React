@@ -1,14 +1,32 @@
 import React from "react";
 import "./about.css";
 import Me from "../../assets/me-about3.jpg";
-import { FaAward } from 'react-icons/fa'
-import { MdDesignServices } from 'react-icons/md'
-import { VscFolderLibrary } from 'react-icons/vsc'
+import { FaAward } from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md";
+import { VscFolderLibrary } from "react-icons/vsc";
+
+const data_about = [
+  {
+    icon: <FaAward className="about__icon" />,
+    title: "Experiencia",
+    duration: 3,
+  },
+  {
+    icon: <MdDesignServices className="about__icon" />,
+    title: "Diseño",
+    duration: 10,
+  },
+  {
+    icon: <VscFolderLibrary className="about__icon" />,
+    title: "Proyectos",
+    duration: 15,
+  },
+];
 
 const About = () => {
   return (
     <section id="about">
-      <h2>Sobre Mi</h2>
+      <h2>Acerca De Mi</h2>
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
@@ -17,28 +35,20 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon"/>
-              <h5>Experiencia</h5>
-              <small>3+ Año</small>
-            </article>
-
-            <article className="about__card">
-              <MdDesignServices className="about__icon"/>
-              <h5>Diseño</h5>
-              <small>15+ Completados</small>
-            </article>
-
-            <article className="about__card">
-              <VscFolderLibrary className="about__icon"/>
-              <h5>Proyectos</h5>
-              <small>10+ Completados</small>
-            </article>
+            {data_about.map((item, index) => (
+              <article key={index} className="about__card">
+                {item.icon}
+                <h5>{item.title}</h5>
+                <small>{item.duration}+ Año</small>
+              </article>
+            ))}
           </div>
           <p>
-              Soy un entusiasta programador autodidacta con experiencia en las actuales tecnologias, a lo largo de todo mi proceso de aprendizaje he mejorado y optimizado mis conocimientos para seguir progresando en este maravilloso mundo 😉.
+            Soy un entusiasta programador autodidacta con experiencia en las
+            actuales tecnologias, a lo largo de todo mi proceso de aprendizaje
+            he mejorado y optimizado mis conocimientos para seguir progresando
+            en este maravilloso mundo 😉.
           </p>
-          <a href="#contact" className="btn btn-primary" style={{fontSize: "20px", fontWeight: "bold", borderRadius: "5px 20px"}}>Hablemos</a>
         </div>
       </div>
     </section>
