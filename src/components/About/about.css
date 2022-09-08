@@ -8,7 +8,7 @@
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    background: linear-gradient(45deg, transparent, #697794, transparent);
     display: grid;
     place-items: center;
 }
@@ -33,7 +33,7 @@
 .about__card {
     background: var(--color-bg-variant);
     border: 1px solid transparent;
-    border-radius: 1rem;
+    border-radius: 5px 40px;
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
@@ -56,13 +56,13 @@
 }
 
 .about__card small {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--color-light);
 }
 
 .about__content p {
     margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+    color: white;
 }
 
 /* Media Queries (Medium Devices) */

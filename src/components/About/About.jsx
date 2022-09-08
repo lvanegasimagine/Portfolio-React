@@ -1,15 +1,14 @@
 import React from "react";
 import "./about.css";
-import Me from "../../assets/me-about.jpg";
+import Me from "../../assets/me-about3.jpg";
 import { FaAward } from 'react-icons/fa'
-import { FiUsers } from 'react-icons/fi'
+import { MdDesignServices } from 'react-icons/md'
 import { VscFolderLibrary } from 'react-icons/vsc'
 
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h2>Sobre Mi</h2>
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
@@ -20,26 +19,26 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon"/>
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <h5>Experiencia</h5>
+              <small>3+ Año</small>
             </article>
 
             <article className="about__card">
-              <FiUsers className="about__icon"/>
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <MdDesignServices className="about__icon"/>
+              <h5>Diseño</h5>
+              <small>15+ Completados</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon"/>
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <h5>Proyectos</h5>
+              <small>10+ Completados</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt et consequuntur alias earum. Dicta, blanditiis harum architecto, a quasi laboriosam, fugiat veritatis voluptates temporibus dolor ratione placeat voluptate possimus.
+              Soy un entusiasta programador autodidacta con experiencia en las actuales tecnologias, a lo largo de todo mi proceso de aprendizaje he mejorado y optimizado mis conocimientos para seguir progresando en este maravilloso mundo 😉.
           </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary" style={{fontSize: "20px", fontWeight: "bold", borderRadius: "5px 20px"}}>Hablemos</a>
         </div>
       </div>
     </section>

@@ -4,10 +4,26 @@ header {
     overflow: hidden;
 }
 
+.container .tema h1 {
+    font-size: 4vw;
+}
+
+a {
+    cursor: pointer;
+}
+
 .header__container {
     text-align: center;
     height: 100%;
     position: relative;
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 /* CTA */
@@ -63,6 +79,7 @@ header {
     font-size: 0.9rem;
 }
 
+
 /* Media Queries (Medium Devices) */
 
 @media screen and (max-width: 1024px){
@@ -74,6 +91,15 @@ header {
 /* Media Queries (Small Devices) */
 
 @media screen and (max-width: 600px){
+
+    .container .tema h1 {
+        font-size: 30px;
+    }
+
+    .container .tema h2 {
+        font-size: 20px;
+    }
+
     header {
         height: 100vh;
     }
