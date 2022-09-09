@@ -2,29 +2,27 @@ import React from 'react'
 import './footer.css'
 import { FaFacebookF } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
-import { IoLogoTwitter } from 'react-icons/io';
+import { BsWhatsapp } from 'react-icons/bs';
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>Lvanegas</a>
+      {/* <a href="#" className='footer__logo'>Luis Vanegas</a> */}
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a> </li>
-        <li><a href="#about">About</a> </li>
-        <li><a href="#experience">Experience</a> </li>
-        <li><a href="#services">Services</a> </li>
-        <li><a href="#portfolio">Portfolio</a> </li>
-        <li><a href="#testimonials">Testimonials</a> </li>
-        <li><a href="#contact">Contacy</a> </li>
+        <li><a href="#">Inicio</a> </li>
+        <li><a href="#about">Acerca de Mi</a> </li>
+        <li><a href="#experience">Experiencia</a> </li>
+        <li><a href="#portfolio">Portafolio</a> </li>
+        <li><a href="#contact">Contacto</a> </li>
       </ul>
       <div className="footer__socials">
-        <a href="https://www.facebook.com"><FaFacebookF/></a>
-        <a href="https://www.instagram.com"><FiInstagram/></a>
-        <a href="https://www.twitter.com"><IoLogoTwitter/></a>
+        <a target='_blank' href="https://www.facebook.com/luis.vanegas.3762/"><FaFacebookF/></a>
+        <a target='_blank' href="https://www.instagram.com/lui_vanegas95/"><FiInstagram/></a>
+        <a target='_blank' href="https://api.whatsapp.com/send/?phone=50582999448&text&type=phone_number&app_absent=0"><BsWhatsapp /></a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Lvanegas Imagine Todos los derechos reservados</small>
+        <small>&copy; Luis Vanegas Todos los derechos reservados</small>
       </div>
     </footer>
   )
