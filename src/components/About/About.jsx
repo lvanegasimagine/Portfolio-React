@@ -14,12 +14,12 @@ const data_about = [
   {
     icon: <MdDesignServices className="about__icon" />,
     title: "Diseño",
-    duration: 10,
+    duration: 3,
   },
   {
     icon: <VscFolderLibrary className="about__icon" />,
     title: "Proyectos",
-    duration: 15,
+    duration: 3,
   },
 ];
 

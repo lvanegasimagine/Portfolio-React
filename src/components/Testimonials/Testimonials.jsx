@@ -39,6 +39,7 @@ const data = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci obcaecati modi temporibus facilis voluptate quod quidem dicta, ratione iusto r",
   },
 ];
+console.log({data})
 
 const Testimonials = () => {
   return (
