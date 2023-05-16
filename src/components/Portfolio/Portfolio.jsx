@@ -42,7 +42,7 @@ const Portfolio = () => {
           <h3>Monedero React + Firebase</h3>
           <div className="portfolio__item-cta">
             <a href="https://github.com/lvanegasimagine/My-Money---React.git" className="btn">
-              Github
+            <FaGithub />
             </a>
             <a
               href="https://my-money-nicaragua.netlify.app/"
@@ -60,7 +60,7 @@ const Portfolio = () => {
           <h3>Control de Gastos React + Localstorage</h3>
           <div className="portfolio__item-cta">
             <a href="https://github.com/lvanegasimagine/control-gastos-react" className="btn">
-              Github
+            <FaGithub />
             </a>
             <a
               href="https://control-gastos-react-topaz.vercel.app/"
@@ -78,7 +78,7 @@ const Portfolio = () => {
           <h3>Clone Airbnb Nextjs + Mongo + Prisma</h3>
           <div className="portfolio__item-cta">
             <a href="https://github.com/lvanegasimagine/Nextjs13-Airbnb" className="btn">
-              Github
+            <FaGithub />
             </a>
             <a
               href="https://nextjs13-airbnb.vercel.app/"
@@ -96,7 +96,7 @@ const Portfolio = () => {
           <h3>SpaceX Mission Api</h3>
           <div className="portfolio__item-cta">
             <a href="https://github.com/lvanegasimagine/spacex-missions" className="btn">
-              Github
+            <FaGithub />
             </a>
             <a
               href="https://spacex-missions-nine.vercel.app/"
@@ -107,24 +107,24 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-        {/* <article className="portfolio__item">
+        <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG6} alt="Portfolio 6" />
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>Pokedex Nextjs</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com/" className="btn">
-              Github
+            <a href="https://github.com/lvanegasimagine/pokemon-nextjs.git" className="btn">
+            <FaGithub />
             </a>
             <a
-              href="https://github.com/"
+              href="https://pokemon-nextjs-static-4qmtdc4xz-lvanegasimagine.vercel.app/"
               className="btn btn-primary"
               target="_blank"
             >
               Live Demo
             </a>
           </div>
-        </article> */}
+        </article>
       </div>
     </section>
   );
